@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farera Handicraft</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://img.freepik.com/premium-vector/fh-logo-design_1172241-5587.jpg"
+        type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geom:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-logo">Farera</div>
+
+        <div class="options" id="navOptions">
+            <a href="#Home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#Explore">Explore</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="login.html" class="login">Log In</a>
+            <div class="profile_account">
+                <i class="ri-account-circle-line"></i>
+            </div>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="Home_Page" id="Home">
+        <div class="text_area animate-fade-in-left">
+            <h2 class="Text_Logo animate-title">Welcome</h2>
+            <article class="animate-text-stagger">
+                <b>⭐ Welcome to Farera Handicraft</b><br>
+                Located in <b><i>Jaipur – Sanganer, Munana Mandi</i></b>, Farera Handicraft brings you beautifully
+                designed ladies' garments including Kurtis, Plazos, Nighties, and a wide range of Jaipuri traditional
+                wear.
+                We combine authentic Jaipuri craftsmanship with modern style to create comfortable, elegant, and
+                high-quality outfits for every woman.
+                Discover the true essence of Jaipur's textile art—crafted with care, tradition, and creativity.
+            </article>
+            <a href="mobile-access.html"
+                style="display: inline-block; margin-top: 1.5rem; padding: 0.8rem 2rem; background: linear-gradient(135deg, #ff7b00, #ff00c8); color: #fff; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 0 20px rgba(255, 123, 0, 0.4);"
+                onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 30px rgba(255, 123, 0, 0.6)'"
+                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 0 20px rgba(255, 123, 0, 0.4)'">
+                📱 View on Android/Mobile
+            </a>
+        </div>
+
+        <div class="circle animate-scale-rotate">
+            <div class="circle_image"></div>
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore" id="Explore">
+        <h2 id="typ_eff" class="explore_title animate-flip-in"></h2>
+
+        <!-- Image Sliding Section -->
+        <div class="images_slide animate-slide-up">
+            <marquee scrollamount="10" scrolldelay="70" behavior="scroll" direction="left">
+                <img src="./Image/Kurti.jpeg" alt="Kurti" class="product-img">
+                <img src="./Image/Kurti2 (1).jpeg" alt="Kurti" class="product-img">
+                <img src="./Image/Kurti2 (2).jpeg" alt="Kurti" class="product-img">
+                <img src="./Image/Kurti2 (3).jpeg" alt="Kurti" class="product-img">
+                <img src="./Image/Kurti2 (4).jpeg" alt="Kurti" class="product-img">
+                <img src="./Image/Kurti3 (1).jpeg" alt="Kurti" class="product-img">
+                <img src="./Image/Kurti3 (2).jpeg" alt="Kurti" class="product-img">
+            </marquee>
+        </div>
+
+        <!-- Explore Button -->
+        <div class="button_box animate-bounce-in">
+            <button class="explore_more">
+                <a href="Explore Page/explore.html">Explore More</a>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-wrapper animate-about-wrapper">
+            <div class="about-image animate-image-zoom">
+                <img src="./Image/Neeraj_farera.jpg" alt="Mr. Neeraj Farera">
+            </div>
+            <div class="about-text animate-text-reveal">
+                <h2 class="section-title animate-title-up">About Us</h2>
+                <h3>Who We Are</h3>
+                <p>
+                    We are Farera Handicraft — creators of premium handmade ethnic wear inspired by
+                    traditional Indian artistry. We blend cultural heritage with modern elegance to deliver
+                    unmatched comfort, quality, and style.
+                </p>
+                <h3>What We Make</h3>
+                <p>
+                    Every piece is crafted by skilled artisans with deep passion and precision. Our dresses
+                    are vibrant, unique, comfortable, and designed to bring out the beauty of Indian
+                    fashion with a modern twist.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Owner Section -->
+    <section class="about-section">
+        <div class="about-wrapper animate-about-wrapper-reverse">
+            <div class="about-text animate-text-reveal-alt">
+                <h2 class="section-title animate-title-up">About Owner</h2>
+                <h3>Mr. Jitendra Farera</h3>
+                <p>
+                    Mr. Jitendra Farera, Owner of Farera Handicraft, brings unmatched leadership,
+                    craftsmanship understanding, and a strong vision for brand excellence. His strategic
+                    approach and commitment to quality have helped shape Farera Handicraft into a premium
+                    modern ethnic brand.
+                </p>
+                <h3>His Role</h3>
+                <p>
+                    He oversees product innovation, brand presence, and customer experience.
+                    Combining creativity with precision, he ensures that each design reflects luxury,
+                    culture, and comfort—hallmarks of the Farera brand.
+                </p>
+            </div>
+            <div class="about-image animate-image-zoom-right">
+                <img src="./Image/Imageeeeeeee.jpg" alt="Director Jitendra Farera">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section animate-contact-section">
+        <div class="contact-container animate-contact-container">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Have a question or want to collaborate? Reach out and we'll get back to you soon!</p>
+
+                <div class="contact-item">
+                    <i class="icon">📍</i>
+                    <span>Sanganeer, Jaipur, Rajasthan, India</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="icon">📞</i>
+                    <span>+91 978 409 6843</span>
+                </div>
+                <div class="contact-item">
+                    <i class="icon">📞</i>
+                    <span>+91 978 409 6438</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="icon">✉️</i>
+                    <span>neerajfarera26@gamil.com</span>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+                <p class="form-response"></p>
+            </form>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.458658586875!2d75.77972547450344!3d26.838209183162664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dbb00e54c0e8b%3A0x7a0b4f3129b7a2!2sSanganeer%2C%20Jaipur%2C%20Rajasthan%2C%20India!5e0!3m2!1sen!2sus!4v1702374886237!5m2!1sen!2sus"
+                allowfullscreen loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="premium-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h1>Farera</h1>
+                <p>Leading innovation and creativity. Connect with us and explore more possibilities.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#explore">Explore</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-resources">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h3>Subscribe</h3>
+                <p>Get the latest updates and news directly to your inbox.</p>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                    <p class="newsletter-response"></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>📍 Sanganeer, Jaipur, Rajasthan, India</p>
+            <p>© 2025 Farera. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+</body>
+
+</html>
